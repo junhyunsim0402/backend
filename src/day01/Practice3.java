@@ -18,5 +18,6 @@ public class Practice3 {
         String motto;
 //        문제4
         System.out.printf("제 이름은 %s, 나이는 %d세, 키는 %fcm입니다.");
+        안녕
     }
 }
