@@ -34,6 +34,7 @@ public class Practice3 {
         boolean result=q%7==0?true:false;
         System.out.println(result);
 //        문제6
+        sc.nextLine();
         System.out.print("아이디:");
         String id=sc.nextLine();
         System.out.print("비밀번호:");
@@ -55,7 +56,7 @@ public class Practice3 {
         System.out.println(output);
 //        문제9
         System.out.print("이름을 입력하세요:");
-        String name1=sc.nextLine();
+        String name1=sc.next();
         String result5= name1.equals("유재석")?name1+"(방장)":name1;
         System.out.println(result5);
 //        문제10
@@ -63,7 +64,7 @@ public class Practice3 {
         double line=sc.nextDouble();
         System.out.print("높이:");
         double height1=sc.nextDouble();
-        System.out.printf("삼각형의 넓이:%.1f",line*height1/2);
+        System.out.printf("삼각형의 넓이:%.1f\n",line*height1/2);
 //        문제11
         System.out.print("섭씨 온도:");
         double subsi=sc.nextDouble();
@@ -79,6 +80,7 @@ public class Practice3 {
         double kg=sc.nextDouble();
         System.out.printf("BMI 지수:%.2f...\n",kg/((cm/100)*(cm/100)));
 //        문제 14
+        sc.nextLine();
         System.out.print("아이디:");
         String id1=sc.nextLine();
         System.out.print("이메일:");
@@ -89,7 +91,7 @@ public class Practice3 {
         System.out.print("점수를 입력하세요:");
         int scores=sc.nextInt();
         char result8=scores>=90?'A':scores>=80?'B':'C';
-        System.out.println(result);
+        System.out.println(result8);
 //        문제16
         System.out.print("나이를 입력하세요:");
         int age=sc.nextInt();
