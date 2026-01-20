@@ -60,6 +60,6 @@ public class Practice1 {
         height=sc.nextFloat();
         System.out.print("프로그래머입니까?(ture/false):");
         boolean result=sc.nextBoolean();
-        System.out.printf("이름%s\n나이:%d\n키:%3.1fcm\n프로그래머 여부:%b",name,age,height,result);
+        System.out.printf("---자기소개---\n이름%s\n나이:%d\n키:%3.1fcm\n프로그래머 여부:%b",name,age,height,result);
     }
 }
