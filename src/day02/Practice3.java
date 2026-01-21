@@ -90,7 +90,7 @@ public class Practice3 {
 //        문제15
         System.out.print("점수를 입력하세요:");
         int scores=sc.nextInt();
-        char result8=scores>=90?'A':scores>=80?'B':'C';
+        char result8=scores>=90?'A':scores>=80?'B':scores<70?'C':'F';
         System.out.println(result8);
 //        문제16
         System.out.print("나이를 입력하세요:");
