@@ -72,15 +72,22 @@ public class practice4 {
 //        문제7
         System.out.print("역할을 입력하세요:");
         String role=scan.next();
-        if(role.equals("admin")) {
-            System.out.println("모든 기능에 접근할수 있습니다");
-        } else if (role.equals("editor")) {
-            System.out.println("콘텐츠 수정 및 생성 기능에 접근할 수 있습니다.");
-        } else if (role.equals("viewer")) {
-            System.out.println("콘텐츠 조회만 가능합니다");
-        }else{
-            System.out.println("정의되지 않은 역할입니다");
-        }
+//        if(role.equals("admin")) {
+//            System.out.println("모든 기능에 접근할수 있습니다");
+//        } else if (role.equals("editor")) {
+//            System.out.println("콘텐츠 수정 및 생성 기능에 접근할 수 있습니다.");
+//        } else if (role.equals("viewer")) {
+//            System.out.println("콘텐츠 조회만 가능합니다");
+//        }else{
+//            System.out.println("정의되지 않은 역할입니다");
+//        }
+        //or
+//        switch (role){
+//            case "admin":System.out.println("모든 기능에 접근할수 있습니다");break;
+//            case "editor":System.out.println("콘텐츠 수정 및 생성 기능에 접근할 수 있습니다");break;
+//            case "viewer":System.out.println("콘텐츠 조회만 가능합니다");break;
+//            default:System.out.println("정의되지 않은 역할입니다");break;
+//        }
 //        문제8
         System.out.print("나이를 입력하세요:");
         int age= scan.nextInt();
@@ -108,16 +115,17 @@ public class practice4 {
 //        문제10
         System.out.print("총 구매 금액:");
         int buymoney= scan.nextInt();
+        double rem=buymoney;
         if(buymoney>=50000){
-            buymoney*=0.9;
+            rem=buymoney*0.9;
         } else if (buymoney>=30000) {
-            buymoney*=0.95;
+            rem=buymoney*0.95;
         } else if (buymoney>=10000) {
-            buymoney*=0.99;
+            rem=buymoney*0.99;
         }else{
-            buymoney*=1;
+            rem=buymoney*1;
         }
-        System.out.printf("최종 결제 금액:%d원\n",buymoney);
+        System.out.printf("최종 결제 금액:%d원\n",(int)rem);
 //        문제11
         System.out.print("월(1~12)을 입력하세요:");
         int month= scan.nextInt();
@@ -200,6 +208,7 @@ public class practice4 {
 //        }else{
 //            System.out.println("다시 입력해주세요");
 //        }
+//        or
         switch (p1){
             case 0:
                 switch (p2){
