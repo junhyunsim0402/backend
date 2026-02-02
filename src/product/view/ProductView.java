@@ -3,8 +3,6 @@ package product.view;
 import product.controller.ProductController;
 import product.controller.UserController;
 import product.model.dao.ProductDao;
-import product.model.dao.UserDao;
-import product.model.dto.ProductDto;
 
 import java.util.ArrayList;
 import java.util.Scanner;
