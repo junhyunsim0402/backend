@@ -19,7 +19,7 @@ CREATE TABLE orders (
     order_qty INT NOT NULL,
     order_date DATE,
     CONSTRAINT PRIMARY KEY (order_id),
-    CONSTRAINT FOREIGN KEY (book_id) REFERENCES books(book_id)
+    CONSTRAINT FOREIGN KEY (book_id) REFERENCES books(book_id) on delete cascade
 );
 insert into books values
 (1001,"혼공 SQL","우재남","컴퓨터",22000,15,"2020-01-01"),
