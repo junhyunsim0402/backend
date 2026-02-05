@@ -54,9 +54,13 @@ public class practice13 {
         };
         g.welecome();
         //문제9
+        System.out.println("[문제9]");
+        Television television=new Television();
+        television.turnOn();television.turnOff();television.setMute(true);
+        television.setMute(false);
         //문제10
         System.out.println("[문제10]");
-        Calculator.plus(10,20);//아직 못함
+        Calculator.plus(10,20);
     }
 }
 //문제3
@@ -101,7 +105,29 @@ interface Greeting{
     void welecome();
 }
 //문제9
+interface Device{
+    void turnOn();void turnOff();
+    public default void setMute(boolean mute){
+        if(mute) {
+            System.out.println("무음 처리합니다.");
+        }else{
+            System.out.println("무음 해제");
+        }
+    }
+}
+class Television implements Device{
+    @Override
+    public void turnOn() {
+        System.out.println("TV를 킵니다.");
+    }
+    @Override
+    public void turnOff() {
+        System.out.println("TV를 끕니다.");
+    }
+}
 //문제10
 interface Calculator{
-    static void plus(int x,int y){};
+    static void plus(int x,int y){
+        System.out.println(x+y);
+    };
 }
