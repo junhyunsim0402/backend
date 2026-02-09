@@ -1,7 +1,3 @@
-drop database if exists day4;
-create database day4;
-use day4;
-
 # DB 생성
 drop database if exists mydb0205;
 create database mydb0205;
