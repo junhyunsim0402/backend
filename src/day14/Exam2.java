@@ -21,7 +21,11 @@ public class Exam2 {
                 타이머스레드.state=true;
                 타이머스레드.start();
             }
-            else if(ch==2){}
+            else if(ch==2){
+                if(타이머스레드!=null){
+                    타이머스레드.state=false;
+                }
+            }
         }
     }
 }
