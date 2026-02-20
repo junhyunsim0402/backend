@@ -14,7 +14,12 @@ public class practice16 {
         }catch (Exception e){}
         System.out.println("[안내] 배달 처리 종료 출력");
         // 문제2
+        Thread UserAThread=new Thread();
+        Thread UserBThread=new Thread();
+        Cart cart=new Cart();
+        for(int i=0;i<5;i++){
 
+        }
     }
 }
 class DeliveryTask implements Runnable{
@@ -27,10 +32,9 @@ class DeliveryTask implements Runnable{
         }catch (Exception e){}
     }
 }
-
 class Cart{
     int total;
-    public void addPrice(int price){
+    public synchronized void addPrice(int price){
         try {
             total += price;
             Thread.sleep(500);
